@@ -1,0 +1,9 @@
+<nav role="navigation" aria-label="Secondary navigation">
+  <ul class="navigation-list">
+    {% for link in site.nav_links %}
+    <li class="navigation-list-item">
+      <a href="{{ link.last }}" class="navigation-list-link" target="_blank">{{ link.first }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>
